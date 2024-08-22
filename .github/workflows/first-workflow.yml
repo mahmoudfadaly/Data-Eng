@@ -4,5 +4,5 @@ jobs:
     first_job:
         runs_on: ubuntu_latest
         steps:
-            -name:welcome msg
+            -name: welcome msg
             run: echo "Hello Mahmoud"
