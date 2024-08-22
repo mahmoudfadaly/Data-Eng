@@ -1,8 +1,9 @@
 name: my first wf
-on: push
+on: 
+    push:
 jobs:
     first_job:
-        runs_on: ubuntu_latest
+        runs_on: ubuntu-latest
         steps:
-            -name: welcome msg
+            - name: welcome msg
             run: echo "Hello Mahmoud"
