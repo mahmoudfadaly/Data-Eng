@@ -1,9 +1,16 @@
 name: my first wf
 on: 
     push:
+    workflow_dispatch:
 jobs:
     first_job:
         runs_on: ubuntu-latest
         steps:
             - name: welcome msg
-            run: echo "Hello Mahmoud"
+              run: echo "Hello Mahmoud"
+
+            - name: list files
+              run:
+                |
+                chmod+x script.sh
+                ./script.sh
